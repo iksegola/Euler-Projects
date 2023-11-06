@@ -3,6 +3,7 @@
 
 numbers  = ['one', 'two', 'three', 'four', 'five']
 
+
 nums_as_dict = {1: 'one',
                 2: 'two',
                 3:'three',
@@ -11,5 +12,6 @@ nums_as_dict = {1: 'one',
 
 }
 
-length = len(nums_as_dict)
-print (length)
+length = [len(x) for x in numbers]
+summish = sum(length)
+print (length, summish)
